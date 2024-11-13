@@ -23,8 +23,8 @@ public class UserService {
         return userRepository.findById(id);
     }
 
-    public User saveUser(User order){
-        return userRepository.save(order);
+    public User saveUser(User user){
+        return userRepository.save(user);
     }
 
     public void deleteUserById(Long id){
