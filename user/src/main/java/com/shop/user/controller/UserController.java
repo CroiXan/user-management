@@ -14,8 +14,11 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.HttpClientErrorException.UnprocessableEntity;
 
 import com.shop.user.exception.ResourceNotFoundException;
+import com.shop.user.exception.UserNotFoundException;
+import com.shop.user.model.LoginRequest;
 import com.shop.user.model.User;
 import com.shop.user.service.UserService;
 
@@ -77,5 +80,12 @@ public class UserController {
             .build();
         User orderResult = userService.saveUser(setBuildOrder);
         return ResponseEntity.ok(orderResult);
+    }
+
+    @GetMapping("/login")
+    public ResponseEntity<User> getUserWithPassword(@Valid @RequestBody LoginRequest loginRequest) {
+        User user = userService.getUserWithPassword(loginRequest.getEmail(),loginRequest.getPasword())
+            .orElseThrow(() -> new UserNotFoundException("Verifique credenciales"));
+        return ResponseEntity.ok(user);
     }
 }

@@ -31,4 +31,10 @@ public class GlobalExceptionHandler {
     public ResponseEntity<String> handleResourceNotFoundException(ResourceNotFoundException exception){
         return new ResponseEntity<>("Eror interno en el servidor", HttpStatus.INTERNAL_SERVER_ERROR);
     }
+
+    @ExceptionHandler(UserNotFoundException.class)
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    public ResponseEntity<String> handleNotValidLogin(UserNotFoundException exception){
+        return new ResponseEntity<>("Login no valido", HttpStatus.NOT_FOUND);
+    }
 }
