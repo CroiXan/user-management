@@ -1,7 +1,14 @@
+C:\Users\Mattias\Documents\DSY2205\user-management\user\src\main\java\com\shop\user\controller\UserController.java
+C:\Users\Mattias\Documents\DSY2205\user-management\user\src\main\java\com\shop\user\exception\GlobalExceptionHandler.java
+C:\Users\Mattias\Documents\DSY2205\user-management\user\src\main\java\com\shop\user\exception\ResourceNotFoundException.java
+C:\Users\Mattias\Documents\DSY2205\user-management\user\src\main\java\com\shop\user\exception\UserNotFoundException.java
+C:\Users\Mattias\Documents\DSY2205\user-management\user\src\main\java\com\shop\user\model\LoginRequest.java
 C:\Users\Mattias\Documents\DSY2205\user-management\user\src\main\java\com\shop\user\model\Orderitem.java
 C:\Users\Mattias\Documents\DSY2205\user-management\user\src\main\java\com\shop\user\model\Orders.java
 C:\Users\Mattias\Documents\DSY2205\user-management\user\src\main\java\com\shop\user\model\Products.java
 C:\Users\Mattias\Documents\DSY2205\user-management\user\src\main\java\com\shop\user\model\User.java
+C:\Users\Mattias\Documents\DSY2205\user-management\user\src\main\java\com\shop\user\repository\UserRepository.java
 C:\Users\Mattias\Documents\DSY2205\user-management\user\src\main\java\com\shop\user\security\CustomAuthenticationEntryPoint.java
 C:\Users\Mattias\Documents\DSY2205\user-management\user\src\main\java\com\shop\user\security\SecurityConfig.java
+C:\Users\Mattias\Documents\DSY2205\user-management\user\src\main\java\com\shop\user\service\UserService.java
 C:\Users\Mattias\Documents\DSY2205\user-management\user\src\main\java\com\shop\user\UserApplication.java
