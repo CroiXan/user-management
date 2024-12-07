@@ -27,9 +27,6 @@ import java.util.List;
 @EnableWebSecurity
 public class SecurityConfig {
 
-    @Value("${allowed.origins}")
-    private String[] allowedOrigins;
-
     @Autowired
     private CustomAuthenticationEntryPoint customAuthenticationEntryPoint;
 
