@@ -10,7 +10,6 @@ com\shop\user\security\SecurityConfig.class
 com\shop\user\service\UserService.class
 com\shop\user\exception\GlobalExceptionHandler.class
 com\shop\user\repository\UserRepository.class
-com\shop\user\security\SecurityConfig$1.class
 com\shop\user\model\Orders.class
 com\shop\user\controller\UserController.class
 com\shop\user\exception\ResourceNotFoundException.class
