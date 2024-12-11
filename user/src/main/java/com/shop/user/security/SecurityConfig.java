@@ -1,7 +1,6 @@
 package com.shop.user.security;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -36,11 +35,11 @@ public class SecurityConfig {
                 .cors(cors -> cors.configurationSource(corsConfigurationSource()))
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers(HttpMethod.OPTIONS, "/api/**").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/api/**").hasAnyRole("USER", "ADMIN")
-                        .requestMatchers(HttpMethod.POST, "/api/**").hasRole("ADMIN")
-                        .requestMatchers(HttpMethod.PUT, "/api/**").hasRole("ADMIN")
-                        .requestMatchers(HttpMethod.DELETE, "/api/**").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.OPTIONS, "/api/user/**").permitAll()
+                        .requestMatchers(HttpMethod.GET, "/api/user/**").hasAnyRole("USER", "ADMIN")
+                        .requestMatchers(HttpMethod.POST, "/api/user/**").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.PUT, "/api/user/**").hasRole("ADMIN")
+                        .requestMatchers(HttpMethod.DELETE, "/api/user/**").hasRole("ADMIN")
                         .anyRequest().authenticated())
                 .exceptionHandling(ex -> 
                     ex.authenticationEntryPoint(customAuthenticationEntryPoint)
