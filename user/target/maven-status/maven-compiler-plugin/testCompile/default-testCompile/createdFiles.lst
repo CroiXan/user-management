@@ -1,1 +1,3 @@
 com\shop\user\AppTest.class
+com\shop\user\controller\UserControllerTests.class
+com\shop\user\security\SecurityConfigTest.class
